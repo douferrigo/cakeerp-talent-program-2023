@@ -6,3 +6,4 @@
 
 ## Contributors
 
+- Douglas Ferrigo de Macedo <douferrigo@gmail.com>
