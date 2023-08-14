@@ -5,11 +5,30 @@ class CursoBase(BaseModel):
     descricao: str
     carga_horaria: int
     qtd_exercicios: int
+    #active : bool
 
 class CursoRequest(CursoBase):
     ...
 
 class CursoResponse(CursoBase):
+    id: int
+
+    class Config:
+        from_attributes = True
+        orm_mode = True
+#-=-=--=--=-=-= Aluno -==--=-=-=-=-=
+class AlunoBase(BaseModel):
+    nome : str
+    sobrenome : str
+    email : str
+    idade : int
+    cpf : int
+    id_curso : int
+
+class AlunoRequest(AlunoBase):
+    ...
+
+class AlunoResponse(AlunoBase):
     id: int
 
     class Config:
